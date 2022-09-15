@@ -138,3 +138,8 @@ setInterval(() => {
 
   document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
 }, 1000);
+
+// Clear localStorage after reload the browser
+window.onbeforeunload = function (e) {
+  localStorage.clear();
+};
