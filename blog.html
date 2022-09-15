@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <section class="pb-5">
+        <div class="row mt-5" id="accordion">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="my-1">
+                  <a
+                    href="#accordion1"
+                    class="text-decoration-none text-dark"
+                    data-bs-toggle="collapse"
+                    >What is the difference between localStorage and
+                    sessionStorage?
+                  </a>
+                </h5>
+              </div>
+              <div class="collapse" id="accordion1" data-bs-parent="#accordion">
+                <div class="card-body">
+                  <p class="m-0">
+                    SessionStorage is similar to localStorage. The difference is
+                    that while data in localStorage doesn't expire, data in
+                    sessionStorage is cleared when the page session ends.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card my-3">
+              <div class="card-header">
+                <h5 class="my-1">
+                  <a
+                    href="#accordion2"
+                    class="text-decoration-none text-dark"
+                    data-bs-toggle="collapse"
+                    >What is the difference between global scope and block
+                    scope?
+                  </a>
+                </h5>
+              </div>
+              <div class="collapse" id="accordion2" data-bs-parent="#accordion">
+                <div class="card-body">
+                  <p class="m-0">
+                    A global variable has global scope. A global variable is
+                    accessible from anywhere in the code, whereas a block scoped
+                    variable means that the variable defined within a block will
+                    not be accessible from outside the block.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="my-1">
+                  <a
+                    href="#accordion3"
+                    class="text-decoration-none text-dark"
+                    data-bs-toggle="collapse"
+                    >How does event loop work in JavaScript?
+                  </a>
+                </h5>
+              </div>
+              <div class="collapse" id="accordion3" data-bs-parent="#accordion">
+                <div class="card-body">
+                  <p class="m-0">
+                    The event loop simply checks the call stack, and if it is
+                    empty (which means there are no functions in the stack) it
+                    takes the oldest callback from the callback queue and pushes
+                    it into the call stack which eventually executes the
+                    callback.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card my-3">
+              <div class="card-header">
+                <h5 class="my-1">
+                  <a
+                    href="#accordion4"
+                    class="text-decoration-none text-dark"
+                    data-bs-toggle="collapse"
+                    >How many ways we can get undefined in JavaScript?
+                  </a>
+                </h5>
+              </div>
+              <div class="collapse" id="accordion4" data-bs-parent="#accordion">
+                <div class="card-body">
+                  <p class="m-0">
+                    There are eight ways we can get undefined. Variable that is
+                    not initialized, function with no return, parameter that is
+                    not passed, if return has nothing on the right side,
+                    property that doesn't exist on an object, accessing array
+                    elements outside of the index range, deleting an element
+                    inside an array, and set a value directly to undefined will
+                    give undefined.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
